@@ -1,6 +1,7 @@
 #define MAX_SIZE 1e3
 #define LOG_SIZE 10 // 2^10 >= 1000
 
+// preprocessing time O(nlogn) and query O(1)
 class SparseTable{
 	int spT[MAX_SIZE][LOG_SIZE], a[MAX_SIZE];
 public:
@@ -33,3 +34,4 @@ public:
 	}
 
 };
+

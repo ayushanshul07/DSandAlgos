@@ -74,7 +74,7 @@ public:
 
 		int mid = l + (r-l)/2;
 		update(2*root,l, mid, i, j, val);
-		update(2*root,mid+1,r,i,j,val);
+		update(2*root+1,mid+1,r,i,j,val);
 		t[root] = max(t[2*root],t[2*root+1]);
 	}
 
